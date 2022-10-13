@@ -1,0 +1,21 @@
+Alan Fernando Mejia Aranda
+TAREA #1
+"Describir una base de datos y sus relaciones de manera no estructurada (puede ser un párrafo, lista, esquema…) con la que 
+trabajar durante el semestre. Agrega el tipo de dato que supones tendrá cada uno de tus atributos."
+
+Una compañía de la rama automotriz cuenta con mas de 500 tiendas al rededor del pais, tiene sus productos clasificados en 
+unicamente 3 grupos distintos "Accesorios", "Quimicos" y "Bajo el auto", en accesorios contamos con todo el tipo de producto 
+no esencial como tapetes, aromatizantes, electronicos, en quimicos contamos con el tipo de producto que en su mayoria es 
+para limpiar tu vehiculo como ceras, pinturas, protectores y en baj el auto partes especificas para tu vehiculo como
+amortiguadores, sistemas de clutch, etc. Contamos con unidades vendidas por grupo en periodos de tiempo como año fiscal, 
+periodo (4 semanas) y semana, contamos con la variable del "precio" y para la compañía es importante saber si sus precios son 
+los adecuados por lo tanto tienen un registro cada que un cliente pregunta por un producto llamado "Busqueda" y un registro 
+cada que se cierra la venta "Transaccion", contamos con un indicador en porcentaje llamado "venta cerrada" con estas dos 
+variables Transaccion/Busqueda para poder ver cual es el porcentaje de ventas cerradas, si este porcentaje baja la compañía 
+nota que para el cliente el producto puede llegar a ser caro.
+
+"Investigar diferentes SGBD, elegir alguno y describirlo. Citar adecuadamente. Plagio invalida tarea."
+SQL
+SQL que sus siglas significan Structured Query Language es un lenguaje que te permite el acceso a datos, su principal funcion
+es el consultar bases de datos y cuenta con distintos grupos de comandos que te permitara realizar la accion de tu consulta,
+esto se trabaja mediante un codigo que en realidad es una instuccion, pero esta esta formada por comandos, clausulas y funciones 
