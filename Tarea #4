@@ -1,0 +1,39 @@
+/*ALAN FERNANDO MEJIA ARANDA*/
+/*TAREA #4*/
+/*Se usa mysql*/
+
+CREATE TABLE store (
+  store_id INT PRIMARY KEY UNIQUE,
+  zone_name VARCHAR(20),
+  zone_numbre INT,
+  region_name VARCHAR(20),
+  city VARCHAR(20),
+  date_opened DATE,
+  store_address VARCHAR(20),
+  store_phone INT UNIQUE
+  );
+ 
+   CREATE TABLE products (
+  product_id INT PRIMARY KEY UNIQUE,
+  description VARCHAR(20),
+  category VARCHAR(20),
+  sub_category VARCHAR(20),
+  retail FLOAT
+  );
+  
+  CREATE TABLE finance (
+  store_id INT,
+  FOREIGN KEY (store_id) REFERENCES store (store_id),
+  category INT,
+  FOREIGN KEY (category) REFERENCES products (category),
+  week INT,
+  period INT,
+  year INT,
+  margin FLOAT,
+  profit FLOAT,
+  sales FLOAT
+  );
+  
+   insert INTO store5 VALUES ('1','Norte','3','monterrey','escobedo','1999-01-01','san juan #300','8184588225')
+  SELECT *
+  FROM store5
