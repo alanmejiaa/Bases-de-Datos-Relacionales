@@ -23,6 +23,19 @@ WHERE B.[Group]='UNDERCAR' AND A.ITEM_STATUS='A' AND A.L13UnitsTotal>0
 
 
 
+SELECT A.SKU, --intento de mediana
+		A.L13UnitsTotal,
+		B.CATEGORY,
+		ROW_NUMBER() OVER(ORDER BY A.L13UnitsTotal ASC) AS CONTADOR 
+FROM Analysis..SKUINFO A
+LEFT JOIN APPS..ITEM_CLASSIFICATION B ON A.SKU=B.SKU
+WHERE B.[Group]='UNDERCAR' AND A.ITEM_STATUS='A' AND A.L13UnitsTotal>0
+
+
+
+
+
+
 SELECT  top 1 A.L13UnitsTotal as MODA,
 		COUNT(A.L13UnitsTotal) AS Frecuencia --contamos las frecuencias
 FROM Analysis..SKUINFO A
